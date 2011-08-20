@@ -1,0 +1,17 @@
+[core]
+  editor = vim
+
+[user]
+  name = J Kishore kumar
+  email = justjkk@gmail.com
+
+[color]
+  diff = auto
+  branch = auto
+  status = auto
+  interactive = auto
+  ui = true
+  pager = true
+
+[apply]
+  whitespace = fix
