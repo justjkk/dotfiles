@@ -13,6 +13,7 @@ set modeline
 set autoread
 set tabpagemax=50
 set title
+set mouse=a
 
 " ---------
 " Highlight
