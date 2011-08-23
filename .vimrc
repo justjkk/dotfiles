@@ -17,7 +17,7 @@ set title
 " ---------
 " Highlight
 " ---------
-highlight Comment ctermfg=DarkGrey guifg=#444444
+highlight Comment ctermfg=DarkGrey guifg=#444444 cterm=bold
 highlight StatusLineNC ctermfg=Black ctermbg=DarkGrey cterm=bold
 highlight StatusLine ctermbg=Black ctermfg=LightGrey
 
