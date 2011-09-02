@@ -102,4 +102,4 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-source .bash/git-info.sh
+source ~/.bash/git-info.sh
