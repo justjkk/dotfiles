@@ -15,6 +15,9 @@ set tabpagemax=50
 set title
 set mouse=a
 
+set background=dark
+colorscheme solarized
+
 " ---------
 " Highlight
 " ---------
