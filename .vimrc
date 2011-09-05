@@ -74,7 +74,7 @@ set hlsearch
 " ---------------
 set autoindent
 set smartindent
-set nowrap
+set wrap
 set softtabstop=2
 set shiftwidth=2
 set tabstop=4
