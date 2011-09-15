@@ -96,3 +96,5 @@ set foldmethod=syntax
 
 autocmd BufRead,BufNewFile *.sql        set ft=pgsql
 autocmd BufRead,BufNewFile *.py set foldmethod=indent
+autocmd BufRead * silent! %s/[\r \t]\+$//
+autocmd BufEnter * :%s/[ \t\r]\+$//e
