@@ -95,6 +95,4 @@ set guioptions-=T
 set foldmethod=syntax
 
 autocmd BufRead,BufNewFile *.sql        set ft=pgsql
-autocmd BufRead,BufNewFile *.md set ft=mkd tw=80 ts=2 sw=2 expandtab
-autocmd BufRead,BufNewFile *.markdown set ft=mkd tw=80 ts=2 sw=2 expandtab
 autocmd BufRead,BufNewFile *.py set foldmethod=indent
