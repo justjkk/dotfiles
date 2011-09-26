@@ -95,6 +95,7 @@ set guioptions-=T
 set foldmethod=syntax
 
 autocmd BufRead,BufNewFile *.sql        set ft=pgsql
+autocmd BufRead *.twig set ft=htmltwig
 autocmd BufRead,BufNewFile *.py set foldmethod=indent
 autocmd BufRead * silent! %s/[\r \t]\+$//
 autocmd BufEnter * :%s/[ \t\r]\+$//e
