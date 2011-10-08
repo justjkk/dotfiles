@@ -96,6 +96,7 @@ set foldmethod=syntax
 
 autocmd BufRead,BufNewFile *.sql        set ft=pgsql
 autocmd BufRead *.twig set ft=htmltwig
-autocmd BufRead,BufNewFile *.py set foldmethod=indent
+autocmd BufRead,BufNewFile *.py set foldmethod=indent ts=4 sts=4 sw=4
+autocmd BufRead,BufNewFile *.php set foldmethod=indent ts=4 sts=4 sw=4
 autocmd BufRead * silent! %s/[\r \t]\+$//
 autocmd BufEnter * :%s/[ \t\r]\+$//e
