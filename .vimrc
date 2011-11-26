@@ -24,6 +24,8 @@ colorscheme solarized
 highlight Comment ctermfg=DarkGrey guifg=#444444 cterm=bold
 highlight StatusLineNC ctermfg=Black ctermbg=DarkGrey cterm=bold
 highlight StatusLine ctermbg=Black ctermfg=LightGrey
+highlight OverLength ctermfg=DarkRed guibg=#592929
+match OverLength /\%81v.\+/
 
 " -----------------------------
 " Highlight Trailing Whitespace
