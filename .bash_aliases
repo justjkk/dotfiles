@@ -1,2 +1,2 @@
 alias ppjson=~/bin/ppjson.py
-source ~/.bash_aliases.local
+[ -f ~/.bash_aliases.local ] && . ~/.bash_aliases.local
