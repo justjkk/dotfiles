@@ -21,10 +21,12 @@ colorscheme solarized
 " ---------
 " Highlight
 " ---------
-highlight Comment ctermfg=DarkGrey guifg=#444444 cterm=bold
+highlight Comment ctermfg=LightGrey guifg=#444444 cterm=bold
 highlight StatusLineNC ctermfg=Black ctermbg=DarkGrey cterm=bold
 highlight StatusLine ctermbg=Black ctermfg=LightGrey
 highlight OverLength ctermfg=DarkRed guibg=#592929
+highlight Normal ctermbg=none
+highlight LineNr ctermbg=DarkGrey
 match OverLength /\%81v.\+/
 
 " -----------------------------
