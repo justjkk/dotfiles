@@ -16,7 +16,7 @@ set title
 set mouse=a
 
 set background=dark
-colorscheme torte
+colorscheme koehler
 
 " ---------
 " Highlight
