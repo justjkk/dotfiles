@@ -16,3 +16,6 @@
 
 [apply]
   whitespace = fix
+
+[branch]
+  autosetuprebase = always
