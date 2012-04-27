@@ -107,3 +107,12 @@ source ~/.bash/git-info.sh
 if [ -f ~/.bashrc.local ]; then
     . ~/.bashrc.local
 fi
+
+repeat() {
+    n=$1
+    shift
+    while [ $(( n -= 1 )) -ge 0 ]
+    do
+        "$@"
+    done
+}
