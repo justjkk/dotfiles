@@ -15,6 +15,8 @@ set tabpagemax=50
 set title
 set mouse=a
 
+set fillchars=fold:.
+
 set background=dark
 colorscheme koehler
 
@@ -27,6 +29,7 @@ highlight StatusLine ctermbg=Black ctermfg=LightGrey
 highlight OverLength ctermfg=DarkRed guibg=#592929
 highlight Normal ctermbg=none
 highlight LineNr ctermbg=DarkGrey
+highlight Folded ctermbg=none ctermfg=DarkGreen
 match OverLength /\%81v.\+/
 
 " -----------------------------
@@ -100,7 +103,7 @@ set foldmethod=syntax
 
 autocmd BufRead *.twig set ft=htmltwig
 autocmd BufRead,BufNewFile *.py set foldmethod=indent ts=4 sts=4 sw=4
-autocmd BufRead,BufNewFile *.php set ts=4 sts=4 sw=4 binary expandtab
+autocmd BufRead,BufNewFile *.php set foldmethod=indent ts=4 sts=4 sw=4 binary expandtab
 autocmd BufRead * silent! %s/[\r \t]\+$//
 autocmd BufEnter * :%s/[ \t\r]\+$//e
 
