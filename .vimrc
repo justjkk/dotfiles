@@ -108,3 +108,5 @@ autocmd BufRead * silent! %s/[\r \t]\+$//
 autocmd BufEnter * :%s/[ \t\r]\+$//e
 
 imap jj <esc>
+
+let NERDTreeIgnore = ['\.py[co]$']
