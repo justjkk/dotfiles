@@ -110,3 +110,7 @@ autocmd BufEnter * :%s/[ \t\r]\+$//e
 imap jj <esc>
 
 let NERDTreeIgnore = ['\.py[co]$']
+
+set path=$PWD/**
+set wildignorecase
+map <C-F> <Esc>:find<Space>
