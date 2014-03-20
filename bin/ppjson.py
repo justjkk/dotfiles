@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import simplejson as json
+import json
 import sys
 
 def pretty_print_json(json_data, indent):

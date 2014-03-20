@@ -19,3 +19,14 @@
 
 [branch]
   autosetuprebase = always
+
+[merge]
+  conflictstyle = diff3
+
+[alias]
+  ci = commit
+  st = status
+  l = log --all --graph --decorate --date-order
+
+[push]
+  default = matching

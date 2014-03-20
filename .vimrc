@@ -108,8 +108,10 @@ autocmd BufRead * silent! %s/[\r \t]\+$//
 autocmd BufEnter * :%s/[ \t\r]\+$//e
 
 imap jj <esc>
+map <F9> :!erviz.sh -i % -o %:r.dot -f inconsolata && OUT_TYPE=svg convert-files.sh %:r.dot && OUT_TYPE=png convert-files.sh %:r.dot <CR><CR>
 
 let NERDTreeIgnore = ['\.py[co]$']
+map <F5> <Esc>:w<CR>:!%:p 2>&1 \| less<CR><CR>
 
 set path=$PWD/**
 set wildignorecase
