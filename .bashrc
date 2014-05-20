@@ -103,6 +103,7 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 source ~/.bash/git-info.sh
+add_git_status_to_prompt
 
 if [ -f ~/.bashrc.local ]; then
     . ~/.bashrc.local
