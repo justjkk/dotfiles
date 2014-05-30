@@ -15,9 +15,11 @@ function _ver_higher {
   fi
 }
 function parse_git_dirty {
-  git diff --quiet --ignore-submodules HEAD && echo $green || echo $red
+  git rev-parse --is-inside-work-tree >/dev/null 2>&1 && \
+    git diff --quiet --ignore-submodules HEAD && echo $green || echo $red
 }
 function parse_git_branch {
+  git rev-parse --is-inside-work-tree >/dev/null 2>&1 && \
   git symbolic-ref -q HEAD | sed -e 's|^refs/heads/||'
 }
 
