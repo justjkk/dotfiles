@@ -72,7 +72,11 @@ xterm*|rxvt*)
     ;;
 esac
 
-PROMPT_COMMAND='__git_ps1 "${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]" "\\\$ " ":%s"'
+display_virtualenv () {
+    [ ${VIRTUAL_ENV} ] && echo '(`basename ${VIRTUAL_ENV}`)';
+}
+
+PROMPT_COMMAND='__git_ps1 "${debian_chroot:+($debian_chroot)}$(display_virtualenv)\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]" "\\\$ " ":%s"'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
