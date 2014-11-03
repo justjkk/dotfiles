@@ -26,7 +26,7 @@
 [alias]
   ci = commit
   st = status
-  l = log --all --graph --decorate --date-order
+  lg = log --all --graph --decorate --date-order
 
 [push]
   default = matching
