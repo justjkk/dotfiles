@@ -29,4 +29,4 @@
   lg = log --all --graph --decorate --date-order
 
 [push]
-  default = matching
+  default = simple
