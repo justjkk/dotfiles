@@ -5,6 +5,7 @@
 [user]
   name = J Kishore Kumar
   email = justjkk@gmail.com
+  signingkey = AB4742AA4D4CBECA
 
 [color]
   diff = auto
@@ -26,7 +27,10 @@
 [alias]
   ci = commit
   st = status
-  lg = log --all --graph --decorate --date-order
+  lg = log --all --graph --decorate --date-order --show-signature
 
 [push]
   default = simple
+
+[commit]
+  gpgsign = true

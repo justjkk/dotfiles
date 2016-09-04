@@ -1,5 +1,5 @@
 alias ppjson=~/bin/ppjson.py
-alias gitl="git log --all --decorate --graph --date-order"
+alias gitl="git log --all --decorate --graph --date-order --show-signature"
 alias gits="git status"
 alias gitd="git diff"
 alias gitdc="git diff --cached"
